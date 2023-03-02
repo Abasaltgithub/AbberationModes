@@ -1,0 +1,3 @@
+# AbberationModes
+This code defines two functions zernike_rad() and zernike() which calculate the radial and angular components, respectively, of the Zernike modes. It also sets up a grid on which to calculate the Zernike modes and defines a list of specific modes to be plotted. The code then creates a polar plot for each mode using matplotlib's pcolormesh() function and adjusts the subplot spacing and labels. Finally, the code removes the color bar and sets the title for each subplot based on the mode being plotted.
+![Unknown-13](https://user-images.githubusercontent.com/83898640/222331606-17911d91-950b-434e-85a6-1d7758c38ad4.png)
