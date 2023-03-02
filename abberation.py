@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1t5J9D5iNPUFWuK7GiiTSWE_MXQIxu0Vn
 """
 
-# this is just a test to check if GitHub gets updated
+# this is just a test to check if GitHub gets update
 
 import cv2
 import numpy as np
