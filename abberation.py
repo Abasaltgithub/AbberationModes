@@ -7,9 +7,13 @@ Original file is located at
     https://colab.research.google.com/drive/1t5J9D5iNPUFWuK7GiiTSWE_MXQIxu0Vn
 """
 
+# this is just a test to check if GitHub gets updated
+
+import cv2
 import numpy as np
 from matplotlib import pyplot as plt
 from scipy.special import comb
+
 
 def zernike_rad(m, n, rho):
 
@@ -24,11 +28,15 @@ def zernike_rad(m, n, rho):
             rad += c * rho**(n-2*k)
         return rad
 
+
 def zernike(m, n, rho, phi):
 
-    if m > 0: return np.sqrt(2) * zernike_rad(m, n, rho) * np.cos(m * phi)
-    if m < 0: return np.sqrt(2) * zernike_rad(-m, n, rho) * np.sin(-m * phi)
+    if m > 0:
+        return np.sqrt(2) * zernike_rad(m, n, rho) * np.cos(m * phi)
+    if m < 0:
+        return np.sqrt(2) * zernike_rad(-m, n, rho) * np.sin(-m * phi)
     return zernike_rad(0, n, rho)
+
 
 # Define a grid on which to calculate the Zernike modes
 rho = np.linspace(0, 1, 100)
@@ -37,10 +45,12 @@ r, theta = np.meshgrid(rho, phi)
 z = np.zeros_like(r)
 
 # Define the Zernike modes to be plotted
-modes = [(0,0), (-1,1), (1,1), (-2,2), (0,2), (2,2), (-3,3), (-1,3), (1,3), (3,3)]
+modes = [(0, 0), (-1, 1), (1, 1), (-2, 2), (0, 2),
+         (2, 2), (-3, 3), (-1, 3), (1, 3), (3, 3)]
 
 # Set up the plot
-fig, axs = plt.subplots(1, len(modes), figsize=(18, 4), subplot_kw=dict(projection='polar'))
+fig, axs = plt.subplots(1, len(modes), figsize=(
+    18, 4), subplot_kw=dict(projection='polar'))
 
 for i, mode in enumerate(modes):
     # Calculate the Zernike mode
@@ -49,7 +59,7 @@ for i, mode in enumerate(modes):
 
     axs[i].pcolormesh(theta, r, Z, cmap='RdBu', shading='auto')
     axs[i].set_title(f"Z{mode[0]}{mode[1]}")
-    
+
 # Adjust the spacing between subplots
 fig.subplots_adjust(wspace=0.5)
 
@@ -61,4 +71,3 @@ for ax, title in zip(axs, modes):
     ax.set_yticklabels([])
     ax.yaxis.set_major_locator(plt.NullLocator())
     ax.set_title(f"Z{title}")
-
