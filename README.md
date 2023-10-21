@@ -1,7 +1,5 @@
 # AberrationModes
 
-
-
 ## Table of Contents
 
 - [About](#about)
@@ -23,8 +21,7 @@ Key features of this repository include:
 - Visualization of Zernike modes using Matplotlib.
 - Examples and usage documentation for easy integration into your projects.
 
-<img src="zernike_modes.png" width="1200">
-
+![Zernike Modes](zernike_modes.png)
 
 ## Getting Started
 
@@ -41,3 +38,6 @@ To run the code in this repository, you need:
 
    ```bash
    git clone https://github.com/Abasaltgithub/AberrationModes.git
+   ```
+
+Now you have successfully cloned the AberrationModes repository.
