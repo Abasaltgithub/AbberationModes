@@ -23,6 +23,7 @@ Key features of this repository include:
 - Visualization of Zernike modes using Matplotlib.
 - Examples and usage documentation for easy integration into your projects.
 
+<img src="zernike_modes.png" width="800">
 ---
 
 ## Getting Started
