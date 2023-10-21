@@ -1,9 +1,5 @@
 # AberrationModes
 
-![Project Image](project_image.png) <!-- You can include an image here if you have one -->
-
-> A repository for generating and visualizing Zernike modes.
-
 ---
 
 ## Table of Contents
