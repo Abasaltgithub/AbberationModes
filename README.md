@@ -1,6 +1,6 @@
 # AberrationModes
 
----
+
 
 ## Table of Contents
 
@@ -24,7 +24,7 @@ Key features of this repository include:
 - Examples and usage documentation for easy integration into your projects.
 
 <img src="zernike_modes.png" width="1200">
----
+
 
 ## Getting Started
 
